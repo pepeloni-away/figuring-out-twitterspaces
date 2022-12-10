@@ -1,0 +1,33 @@
+ffmpeg -seekable 1 -reconnect_at_eof 1 -reconnect_delay_max 200 -i https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/8VDNz9yshtFz5HnjB54oLiZ_QHX4xCjd5Y93yXkESvX6ae9EXNBCs_1zp8h_nyHfrbQISXjCYr2c3DkemvN9ew/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/playlist_16801000792180828370.m3u8 -live_start_index 0 -threads 33 -c copy huggaa.mkv
+
+
+
+
+keep pooling 
+
+		>curl https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/8VDNz9yshtFz5HnjB54oLiZ_QHX4xCjd5Y93yXkESvX6ae9EXNBCs_1zp8h_nyHfrbQISXjCYr2c3DkemvN9ew/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/master_playlist.m3u8
+
+until playlist_whatever is constant >>> space ended
+
+after it ends take playlist_whatever and replace master_playlist with it >>>> feed to ffmpeg
+
+
+
+https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/DZMpeVRDZDowmqAHWDD_LybJN66Ys-L6Ut9nNsSUEqKYgyqWAgHh3AVIip5rlVzmr-Y1orVnHx-YbBbldKKBpg/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/audio-space/master_playlist.m3u8
+
+returns 
+
+#EXTM3U
+#EXT-X-DYNAMICALLY-GENERATED
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=350000,RESOLUTION=8x8,CODECS="avc1.640015,mp4a.40.2",FRAME-RATE=30.000
+/Transcoding/v1/hls/DZMpeVRDZDowmqAHWDD_LybJN66Ys-L6Ut9nNsSUEqKYgyqWAgHh3AVIip5rlVzmr-Y1orVnHx-YbBbldKKBpg/transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJIZWlnaHQiOjgsIkticHMiOjM1MCwiVHJhbnNjb2RlQXVkaW8iOnRydWUsIldpZHRoIjo4fQ.j9A1sJbguxIY34C17U6iN7yTx8JM_ZNYJhfxaSmwGKQ/audio-space/playlist_16801075139470910842.m3u8
+
+take playlist_16801075139470910842.m3u8 and replace master_playlist with it
+
+https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/DZMpeVRDZDowmqAHWDD_LybJN66Ys-L6Ut9nNsSUEqKYgyqWAgHh3AVIip5rlVzmr-Y1orVnHx-YbBbldKKBpg/non_transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/audio-space/playlist_16801075139470910842.m3u8
+
+
+
+
+
+about the twitter space fragments talk above, you can actually get a working m3u8 with all of the fragments from twitter without having to write and modify the master playlist

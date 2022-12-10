@@ -1,0 +1,364 @@
+payload: "{\"access_token\":\"29Bs6qfS0bpVH5Iyo7Viypaguxgn0GkOwCy7sPU6q9y-eorUBSsDU52yEi6wnQQyc0qSrYOjAXN1Ci2iL3_I3AGLy8EfUV_ZrT0sRsE8oG1JoDnOICi8_A_HXSC3Ysy4e6WBpnDaBhk3QvfgkDunPvDVEjFq3DBeUavbckZUCkmJzsfp23RuH0QVscVNUIDkswY26xsxquKQODSiD-Kp48WQCCjJZWjLy4yfbjNiTYf4cYaUelNP44obN5HlveJ0Fk7oGoXctinJJfAc14J5ZG58PfyzyQmzj6b_Bsb9hNEtlzxUQv2MXIGChrYgv1yqHqEvefm__lXzFHM8cId68i_pIkGUVNjljsubKHBLZf-X0CRWKEUt8rNyJgQKmK28Ays8hM49oxxjHjpJPPIu1tqVivJKukruqgPCBKFmJbQgybty_cQh3iC9v37S0NIOmhenBV-kz6w5Hr04nvXgU75nBQHNp9LMbFjyeI8YGgeqOdRcZ2D73BTMfd0dC4NYjuxAT-jPcFWnFpHpkYXGHlOPYehJzM6_opzLq04iFjrj-4tUyujN2_dlojQnE5Q8uTFKt68udZVrGZ_f4h7G2hKIReIW2\"}"
+
+
+
+
+example m3u8 https://prod-fastly-ap-southeast-1.video.pscp.tv/Transcoding/v1/hls/z9pJFAxtC6AzTn7L8GabaY8W9pS1S_bYkx9lfNdg1UGQ5m_a0BrQzCIcyKP359XhPpq_D7tsC547yg7uqngebQ/non_transcode/ap-southeast-1/periscope-replay-direct-prod-ap-southeast-1-public/audio-space/dynamic_playlist.m3u8?type=live
+
+
+
+
+filter "live_video_stream" > response below + all extra info in console
+
+{
+  "source" : {
+    "location" : "https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/EtUl2EEo6M7TmHZuB5slv2MN9KIdwFfPdeT1IHlz7KTlAGiBJOGJXhryWN8bjiRzR4uNcf8yxOOv83wYELUecw/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/dynamic_playlist.m3u8?type=live",
+    "noRedirectPlaybackUrl" : "https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/EtUl2EEo6M7TmHZuB5slv2MN9KIdwFfPdeT1IHlz7KTlAGiBJOGJXhryWN8bjiRzR4uNcf8yxOOv83wYELUecw/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/dynamic_playlist.m3u8?type=live",
+    "status" : "LIVE_PUBLIC",
+    "streamType" : "HLS"
+  },
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+space 1 info : 
+HEADERS
+
+{
+	"GET": {
+		"scheme": "https",
+		"host": "twitter.com",
+		"filename": "/i/api/1.1/live_video_stream/status/28_1442044205082112001",
+		"query": {
+			"client": "web",
+			"use_syndication_guest_id": "false",
+			"cookie_set_host": "twitter.com"
+		},
+		"remote": {
+			"Address": "104.244.42.129:443"
+		}
+	}
+}
+
+{
+	"Response Headers (602 B)": {
+		"headers": [
+			{
+				"name": "access-control-allow-credentials",
+				"value": "true"
+			},
+			{
+				"name": "access-control-allow-origin",
+				"value": "https://twitter.com"
+			},
+			{
+				"name": "cache-control",
+				"value": "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+			},
+			{
+				"name": "content-length",
+				"value": "1520"
+			},
+			{
+				"name": "date",
+				"value": "Sun, 26 Sep 2021 11:18:22 UTC"
+			},
+			{
+				"name": "expires",
+				"value": "Tue, 31 Mar 1981 05:00:00 GMT"
+			},
+			{
+				"name": "last-modified",
+				"value": "Sun, 26 Sep 2021 11:18:22 GMT"
+			},
+			{
+				"name": "pragma",
+				"value": "no-cache"
+			},
+			{
+				"name": "server",
+				"value": "tsa_o"
+			},
+			{
+				"name": "strict-transport-security",
+				"value": "max-age=631138519"
+			},
+			{
+				"name": "x-connection-hash",
+				"value": "3ed816998ee34b38c051550b7ab93b4d6475087426d5afafe62581da49640d46"
+			},
+			{
+				"name": "X-Firefox-Spdy",
+				"value": "h2"
+			},
+			{
+				"name": "x-rate-limit-limit",
+				"value": "1000"
+			},
+			{
+				"name": "x-rate-limit-remaining",
+				"value": "999"
+			},
+			{
+				"name": "x-rate-limit-reset",
+				"value": "1632656002"
+			}
+		]
+	}
+}
+
+{
+	"Request Headers (1.449 KB)": {
+		"headers": [
+			{
+				"name": "Accept",
+				"value": "*/*"
+			},
+			{
+				"name": "Accept-Encoding",
+				"value": "gzip, deflate, br"
+			},
+			{
+				"name": "Accept-Language",
+				"value": "en-US,en;q=0.5"
+			},
+			{
+				"name": "authorization",
+				"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+			},
+			{
+				"name": "Connection",
+				"value": "keep-alive"
+			},
+			{
+				"name": "Cookie",
+				"value": "personalization_id=\"v1_/xXZQE8+HLtY3G1HwGYI+w==\"; guest_id=v1%3A163196505455223010; gt=1442085027496431618; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b"
+			},
+			{
+				"name": "Host",
+				"value": "twitter.com"
+			},
+			{
+				"name": "Referer",
+				"value": "https://twitter.com/search?q=filter%3A%22spaces%22&src=typed_query&f=top"
+			},
+			{
+				"name": "Sec-Fetch-Dest",
+				"value": "empty"
+			},
+			{
+				"name": "Sec-Fetch-Mode",
+				"value": "cors"
+			},
+			{
+				"name": "Sec-Fetch-Site",
+				"value": "same-origin"
+			},
+			{
+				"name": "TE",
+				"value": "trailers"
+			},
+			{
+				"name": "User-Agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0"
+			},
+			{
+				"name": "x-csrf-token",
+				"value": "1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95"
+			},
+			{
+				"name": "x-twitter-active-user",
+				"value": "yes"
+			},
+			{
+				"name": "x-twitter-auth-type",
+				"value": "OAuth2Session"
+			},
+			{
+				"name": "x-twitter-client-language",
+				"value": "en"
+			}
+		]
+	}
+}
+
+
+
+Cookie
+	personalization_id="v1_/xXZQE8+HLtY3G1HwGYI+w=="; guest_id=v1%3A163196505455223010; gt=1442085027496431618; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b
+Host
+	twitter.com
+Referer
+	https://twitter.com/search?q=filter%3A%22spaces%22&src=typed_query&f=top
+Sec-Fetch-Dest
+	empty
+Sec-Fetch-Mode
+	cors
+Sec-Fetch-Site
+	same-origin
+TE
+	trailers
+User-Agent
+	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0
+x-csrf-token
+	1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95
+x-twitter-active-user
+	yes
+x-twitter-auth-type
+	OAuth2Session
+x-twitter-client-language
+	en
+	
+COOKIES
+
+{
+	"_twitter_sess": "BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--1164b91ac812d853b877e93ddb612b7471bebc74",
+	"auth_token": "e099d445c206be0e07e2542f0c3688c22561dd5b",
+	"ct0": "1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95",
+	"gt": "1442085027496431618",
+	"guest_id": "v1:163196505455223010",
+	"kdt": "97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE",
+	"personalization_id": "\"v1_/xXZQE8+HLtY3G1HwGYI+w==\"",
+	"twid": "u=1442085498911014923"
+}
+
+RESPONSE 
+{
+	"source": {
+		"location": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/qejPHGXAs6dLe0a5Syj9xrVlL3Ah92aRFxJ9ELjXIYVX6vfzT2fGIMbS8Az-JJksHQkNd5bCFl4pBN9Eq1OvtA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/audio-space/dynamic_playlist.m3u8?type=live",
+		"noRedirectPlaybackUrl": "https://prod-fastly-eu-central-1.video.pscp.tv/Transcoding/v1/hls/qejPHGXAs6dLe0a5Syj9xrVlL3Ah92aRFxJ9ELjXIYVX6vfzT2fGIMbS8Az-JJksHQkNd5bCFl4pBN9Eq1OvtA/non_transcode/eu-central-1/periscope-replay-direct-prod-eu-central-1-public/audio-space/dynamic_playlist.m3u8?type=live",
+		"status": "LIVE_PUBLIC",
+		"streamType": "HLS"
+	},
+	"sessionId": "1442086135950360579",
+	"chatToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI3NDE1MDIsImFtYmlndW91c191c2VyX2lkIjoiZXlKVWQybDBkR1Z5VlhObGNrbGtJam94TkRReU1EZzFORGs0T1RFeE1ERTBPVEl6ZlE9PSIsImJyb2FkY2FzdF9pZCI6IjFlYUtiTmJ5RXpyS1giLCJsb3dfbGF0ZW5jeSI6dHJ1ZSwicmVhZF9vbmx5IjpmYWxzZSwicGFydGljaXBhbnRfaW5kZXgiOjE4NTQ5MjY4NjV9.6fe6IeFtBd6S5fFz0stBbOeEcpwNZTL64H_k7FJDaUM",
+	"lifecycleToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzI3NDE1MDIsImJyb2FkY2FzdF9pZCI6IjFlYUtiTmJ5RXpyS1giLCJjcmVhdGVkIjoxNjMyNjU1MTAyLCJpZ25vcmUiOmZhbHNlLCJwYXJ0aWNpcGFudF9pbmRleCI6MTg1NDkyNjg2NSwiaXNfbGl2ZSI6dHJ1ZSwiaXNfaGlnaGxpZ2h0cyI6ZmFsc2UsInRva2VuX3ZlcnNpb24iOjF9.zCn1iHJelb9NHUFd5xUOSqmdNkCy6fiY0Iext_oZLs0",
+	"shareUrl": "https://twitter.com/i/broadcasts/1eaKbNbyEzrKX",
+	"chatPermissionType": "StreamTypeLowLatency"
+}
+
+
+
+CURL COMMAND THAT WORKS.. Kinda
+
+curl 'https://twitter.com/i/api/graphql/65LKfmsxIRdd6g3VM8e6Zw/AudioSpaceById?variables={"id":"1nAKEYOQYaaKL","isMetatagsQuery":true,"withSuperFollowsUserFields":true,"withUserResults":true,"withBirdwatchPivots":true,"withReactionsMetadata":true,"withReactionsPerspective":true,"withSuperFollowsTweetFields":true,"withScheduledSpaces":true}' -X 'GET' -H 'Content-Type: application/json' -H 'Accept:*/*' -H 'Host: twitter.com' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'x-twitter-auth-type: OAuth2Session' -H 'x-twitter-client-language: en' -H 'x-twitter-active-user: yes' -H 'x-csrf-token: 1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' -H 'Referer: https://twitter.com/i/spaces/1nAKEYOQYaaKL/peek' -H 'Connection: keep-alive' -H 'Cookie: personalization_id="v1_/xXZQE8+HLtY3G1HwGYI+w=="; guest_id=v1%3A163196505455223010; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74' -H 'TE: trailers' --output spacecurl.json
+
+https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/GARPDOIollvZxI4MEckI4vnHAD6207xiiPyLLxQsSxSxTXYCf5Jl4YE4sCUji3cjgEfp8QgNU9nPdGPxY6UZWQ/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/dynamic_playlist.m3u8
+
+curl 'https://twitter.com/i/api/1.1/oauth/authenticate_periscope.json' -X 'GET' -H 'Content-Type: application/json' -H 'Accept:*/*' -H 'Host: twitter.com' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'x-twitter-auth-type: OAuth2Session' -H 'x-twitter-client-language: en' -H 'x-twitter-active-user: yes' -H 'x-csrf-token: 1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' -H 'Referer: https://twitter.com/search?q=filter%3Aspaces&src=typed_query&f=top' -H 'Connection: keep-alive' -H 'Cookie: personalization_id="v1_/xXZQE8+HLtY3G1HwGYI+w=="; guest_id=v1%3A163196505455223010; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74' -H 'TE: trailers' --output spacecurl.json
+
+
+filter "https://twitter.com/i/api/1.1/oauth/authenticate_periscope.json" for periscope token
+token	"eyJraWQiOiIxNjMzMDEwNDY0IiwiYWxnIjoiUlMyNTYifQ.eyJleHAiOjE2MzMxNzY0ODAsInVzZXJJZCI6IjE0NDIwODU0OTg5MTEwMTQ5MjMifQ.Bu9MKyVg9MsL1nvissVqI618ywTZ6QzimlZOOK-DY8nvdY6ruGPdZ79eXqUkUt3Tv4PGzENOHgk4M5-vDMwJjhpbkqp5rPV4K1RyaUmI824ymjttspLiDW5QbkhvJ-JTVTY6owWwMdIT7WsX3vRoplERjhD6SyhDWTcrMHwwsrBwdziISj16BFROevEaMNzZSHYxb_oErnxZvn5C2IDWTpxRHPvIgj4T9fVqKmWfJwumpNFqi9zQSHBNpoY6rfNyhCgkqyyITDDP1bJeJWjOhW_st2HCmPu6qskFTjcdoEqBbdKlrnZ09kpE7EjaN091Yeukb4lgCllqJyhZ5ehK8Q"
+
+	    "https://proxsee.pscp.tv/api/v2/loginTwitterToken"
+{"cookie":"YVmb9XsiVHdpdHRlclVzZXJJZCI6MTQ0MjA4NTQ5ODkxMTAxNDkyMywiVmVyc2lvbiI6IjAifTu_0q23nILQXeHRuJ9Xhw4UwixMeoFNhfsbp7J2UTrl","user":{"class_name":"TwitterUser","id":"tw-1442085498911014923","created_at":null,"is_twitter_verified":false,"is_direct_bluebird_user":true,"twitter_screen_name":"spaces_invader","display_name":"spacesInvader","description":"","profile_image_urls":[{"url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_reasonably_small.png","ssl_url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_reasonably_small.png","width":128,"height":128},{"url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png","ssl_url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png","width":200,"height":200},{"url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png","ssl_url":"https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png","width":400,"height":400}],"twitter_id":"1442085498911014923","n_followers":0,"n_following":0},"type":"Twitter"}
+
+
+
+"vendor_id":"m5-proxsee-login-a2011357b73e"
+
+
+HTTP/2 200 OK
+cache-control: max-age=1, s-max-age=1
+content-type: application/x-mpegURL
+expires: Sat, 02 Oct 2021 12:43:56 GMT
+x-amzn-trace-id: Root=1-6158540b-5d3bc10cc98438f01140ed34
+via: 1.1 varnish, 1.1 varnish
+fetch-debug-path: (F cache-fra19157-FRA 1633178636) (D cache-dca17748-DCA 1633178636) (F cache-dca17745-DCA 1633178636)
+fetch-server-identity: cache-fra19157-FRA
+accept-ranges: bytes
+date: Sat, 02 Oct 2021 12:43:56 GMT
+age: 0
+x-served-by: cache-dca17748-DCA, cache-fra19128-FRA
+x-cache: HIT, MISS
+x-cache-hits: 1, 0
+x-timer: S1633178636.012633,VS0,VE90
+vary: Origin
+access-control-allow-origin: https://twitter.com
+access-control-allow-credentials: true
+access-control-allow-methods: GET, OPTIONS
+access-control-allow-headers: X-Periscope-User-Agent,X-Periscope-Csrf,Connection,X-Forwarded-Port,Pragma,Accept,Cache-Control,Referer,X-Forwarded-Proto,User-Agent,Origin,Accept-Encoding,Accept-Language,Access-Control-Request-Method,Access-Control-Request-Headers,X-Forwarded-For,Content-Type
+deliver-server-identity: cache-fra19128-FRA
+content-length: 452
+X-Firefox-Spdy: h2
+
+
+space info from spaceID, works after it ends
+
+(readable url from firefox): check urldecode https://twitter.com/i/api/graphql/65LKfmsxIRdd6g3VM8e6Zw/AudioSpaceById?variables={"id":"1vAxRkaWykkKl","isMetatagsQuery":false,"withSuperFollowsUserFields":true,"withUserResults":true,"withBirdwatchPivots":false,"withReactionsMetadata":false,"withReactionsPerspective":false,"withSuperFollowsTweetFields":true,"withScheduledSpaces":true}
+
+curl 'https://twitter.com/i/api/graphql/65LKfmsxIRdd6g3VM8e6Zw/AudioSpaceById?variables=%7B%22id%22%3A%221vAxRkaWykkKl%22%2C%22isMetatagsQuery%22%3Atrue%2C%22withSuperFollowsUserFields%22%3Atrue%2C%22withUserResults%22%3Atrue%2C%22withBirdwatchPivots%22%3Atrue%2C%22withReactionsMetadata%22%3Atrue%2C%22withReactionsPerspective%22%3Atrue%2C%22withSuperFollowsTweetFields%22%3Atrue%2C%22withScheduledSpaces%22%3Atrue%7D' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'content-type: application/json' -H 'x-twitter-auth-type: OAuth2Session' -H 'x-twitter-client-language: en' -H 'x-twitter-active-user: no' -H 'x-csrf-token: 1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' -H 'Referer: https://twitter.com/search?q=filter%3Aspaces&src=typed_query&f=top' -H 'Connection: keep-alive' -H 'Cookie: personalization_id="v1_/xXZQE8+HLtY3G1HwGYI+w=="; guest_id=v1%3A163196505455223010; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74' -H 'TE: trailers'
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for master playlist 
+
+ curl 'https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/eH4PSOkbVS3VnLVqOuXFNNQmLFMo7E0TMfT9QS6uuePvgLPpQx00cwtYVgXMFC5EI8o_YkS1FUXYGGp8BUy2fA/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/master_playlist.m3u8' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Origin: https://twitter.com' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site' -H 'Referer: https://twitter.com/' -H 'Connection: keep-alive' -H 'TE: trailers' 
+ 
+ 
+ 
+ matsuri 23.06.2021
+ https://prod-fastly-ap-northeast-1.video.pscp.tv/Transcoding/v1/hls/eH4PSOkbVS3VnLVqOuXFNNQmLFMo7E0TMfT9QS6uuePvgLPpQx00cwtYVgXMFC5EI8o_YkS1FUXYGGp8BUy2fA/non_transcode/ap-northeast-1/periscope-replay-direct-prod-ap-northeast-1-public/audio-space/dynamic_playlist.m3u8?type=live
+ 
+ https://prod-fastly-ap-northeast-1.video.pscp.tv/Transcoding/v1/hls/eH4PSOkbVS3VnLVqOuXFNNQmLFMo7E0TMfT9QS6uuePvgLPpQx00cwtYVgXMFC5EI8o_YkS1FUXYGGp8BUy2fA/transcode/ap-northeast-1/periscope-replay-direct-prod-ap-northeast-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJIZWlnaHQiOjgsIkticHMiOjM1MCwiVHJhbnNjb2RlQXVkaW8iOnRydWUsIldpZHRoIjo4fQ.j9A1sJbguxIY34C17U6iN7yTx8JM_ZNYJhfxaSmwGKQ/audio-space/playlist_16822276126851984327.m3u8
+ 
+curl 'https://twitter.com/i/api/graphql/65LKfmsxIRdd6g3VM8e6Zw/AudioSpaceById?variables=%7B%22id%22%3A%221edlQumQj5Xng%22%2C%22isMetatagsQuery%22%3Afalse%2C%22withSuperFollowsUserFields%22%3Atrue%2C%22withUserResults%22%3Atrue%2C%22withBirdwatchPivots%22%3Afalse%2C%22withReactionsMetadata%22%3Afalse%2C%22withReactionsPerspective%22%3Afalse%2C%22withSuperFollowsTweetFields%22%3Atrue%2C%22withScheduledSpaces%22%3Atrue%7D' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'content-type: application/json' -H 'x-twitter-auth-type: OAuth2Session' -H 'x-twitter-client-language: en' -H 'x-twitter-active-user: no' -H 'x-csrf-token: 1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' -H 'Referer: https://twitter.com/search?q=filter%3Aspaces&src=typed_query&f=top' -H 'Connection: keep-alive' -H 'Cookie: personalization_id="v1_/xXZQE8+HLtY3G1HwGYI+w=="; guest_id=v1%3A163196505455223010; ct0=1f49f21b2537b2b2c3dda01f736694534ec340ed54252a98eeda4d98a0d7653adcf34dd4b1b80620639cc3b6e9c5540a3fe1cedfb69476f27d5f1488a9f475f424b239c4a0148424cf7e7f2e2bc0dd95; kdt=97l8OpmiZE3IDj3XoIS97MgqIXDq0bZB7SQrGbyE; twid=u%3D1442085498911014923; auth_token=e099d445c206be0e07e2542f0c3688c22561dd5b; _twitter_sess=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--1164b91ac812d853b877e93ddb612b7471bebc74' -H 'TE: trailers'
+
+
+
+https://prod-fastly-ap-northeast-1.video.pscp.tv/Transcoding/v1/hls/w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng/transcode/ap-northeast-1/periscope-replay-direct-prod-ap-northeast-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJIZWlnaHQiOjgsIkticHMiOjM1MCwiVHJhbnNjb2RlQXVkaW8iOnRydWUsIldpZHRoIjo4fQ.j9A1sJbguxIY34C17U6iN7yTx8JM_ZNYJhfxaSmwGKQ/audio-space/playlist_16822276126851984327.m3u8
+
+eH4PSOkbVS3VnLVqOuXFNNQmLFMo7E0TMfT9QS6uuePvgLPpQx00cwtYVgXMFC5EI8o_YkS1FUXYGGp8BUy2fA
+w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pair of kanata sharable id and space id, media key
+https://twitter.com/i/spaces/1gqxvlkoPEzGB
+w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng
+28_1444725537839071238
+
+
+
+curl 'https://canary-video-us-east-1.pscp.tv/Transcoding/v1/hls/w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/audio-space/master_playlist.m3u8?type=replay' -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; YAL-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.56 Mobile Safari/537.36' -H 'Accept: */*' -H 'Accept-Language: en-GB,en;q=0.5' --compressed -H 'Origin: https://twitter.com' -H 'Connection: keep-alive' -H 'Referer: https://twitter.com/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site'
+#EXTM3U
+#EXT-X-DYNAMICALLY-GENERATED
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=350000,RESOLUTION=8x8,CODECS="avc1.640015,mp4a.40.2",FRAME-RATE=30.000
+/Transcoding/v1/hls/w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng/transcode/ap-northeast-1/periscope-replay-direct-prod-ap-northeast-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJIZWlnaHQiOjgsIkticHMiOjM1MCwiVHJhbnNjb2RlQXVkaW8iOnRydWUsIldpZHRoIjo4fQ.j9A1sJbguxIY34C17U6iN7yTx8JM_ZNYJhfxaSmwGKQ/audio-space/playlist_16813456245467163751.m3u8?type=replay
+
+
+#add tw_ before playlist_, gives twitter info about chunks, aes encoded but gives key
+curl 'https://prod-fastly-ap-northeast-1.video.pscp.tv/Transcoding/v1/hls/w3rQlWFwMDPly1hMq6o8MeGbfNEvx_XKrNb6xy-gJZfsa7T-cEgibH-u49z3sIsUu5yyuK1er1edlQumQj5Xng/transcode/ap-northeast-1/periscope-replay-direct-prod-ap-northeast-1-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJIZWlnaHQiOjgsIkticHMiOjM1MCwiVHJhbnNjb2RlQXVkaW8iOnRydWUsIldpZHRoIjo4fQ.j9A1sJbguxIY34C17U6iN7yTx8JM_ZNYJhfxaSmwGKQ/audio-space/tw_playlist_16813456245467163751.m3u8?type=replay'
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+https://www.reddit.com/r/youtubedl/comments/q44udg/issue_downloading_a_twitter_broadcast_http_error/
+old broadcast issue   https://github.com/streamlink/streamlink/issues/2672
+curl "https://twitter.com/i/live_video_stream/key?stream_name=lcT9QRKE4k0sbQ1fegNQp5e3okZT6vvIoerE6YGz2dpqaETtBsf9W-qTOTq4KpNuging-SQ-O87nJbkyZb2TyA" -H "sec-fetch-mode: cors" -H "accept-encoding: gzip, deflate, br" -H "accept-language: en-US,en;q=0.9" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" -H "accept: */*" -H "referer: https://twitter.com/i/broadcasts/1DXGypZjzbeKM" -H "authority: twitter.com" -H "cookie: personalization_id=^\^"v1_rr9T5ts1WXX8/jnODfcFlg==^\^"; guest_id=v1^%^3A152404915302469360; _ga=GA1.2.465407636.1524104366; kdt=rmtC5B2VI8iegpQuhrxoDjPJ7555jcj6kQnvoXKe; syndication_guest_id=v1^%^3A152430946102910503; dnt=1; csrf_same_site_set=1; csrf_same_site=1; ads_prefs=^\^"HBISAAA=^\^"; remember_checked_on=1; auth_token=fa9fc21800bae3b5be0fdf55cb6438d61360581c; rweb_optin=side_no_out; twid=u^%^3D169514738; tfw_exp=0; lang=en; _gid=GA1.2.490692571.1572098795; gt=1188552249057918976; ct0=c0d5bbe6de64a871975067a86d7d331f; external_referer=0Z2yCZ8K5BC23CfHfGPfAbYyWpM12X6X2VcSzf6^%^2FB6Sbiak^%^2BBEXVvyyw11FCAKO^%^2BgQ3B3c6jR1nzdrNlGrK65zbZmv0Xg^%^2B0Nva^%^2BmM909T0w^%^3D^|0^|8e8t2xd8A2w^%^3D; _gat=1; lv-uid=AAAAEIAuupFT6gEsSBns9vYVwK2s5u6cbamMWVmmGaSBGW8n1YCswj26NDM" -H "sec-fetch-site: same-origin" --compressed
+
+
+
+
+
+
+
+
+curl 'https://twitter.com/i/api/1.1/live_video_stream/status/28_1444725537839071238?client=web&use_syndication_guest_id=false&cookie_set_host=twitter.com' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0' -H 'Accept: */*' -H 'Accept-Language: en-GB,en;q=0.5' --compressed -H 'x-guest-token: 1448002176501133318' -H 'x-twitter-client-language: en-GB' -H 'x-twitter-active-user: yes' -H 'x-csrf-token: b5aa52bdff3adeb05a3f95af59ebf401' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' -H 'Referer: https://twitter.com/search?q=filter%3Aspaces&src=typed_query&f=top' -H 'Connection: keep-alive' -H 'Cookie: personalization_id="v1_aSscTcStwRN8rrNR8A03/Q=="; guest_id=v1%3A163406559461381788; ct0=b5aa52bdff3adeb05a3f95af59ebf401; gt=1448002176501133318; _ga=GA1.2.361490980.1634065599; _gid=GA1.2.536519973.1634065599; eu_cn=1; lv-uid=AAAAEIDHp5IKglMJid6_An0LdwarBmTr9AdXK9ic9ZvRYJtl06aQfaTKbkSb-Lx_' -H 'TE: trailers'
+
+
+
+
+
+TO DO: USE ?key=stream_name from broadcasts to get space key to allow ffmpeg direct dl from m3u8
+
+Yb9dhqiDv7Lp2yuX7M3tw26ew0I7dsUMQIzOb33QWbX
