@@ -4,4 +4,4 @@ stuff from when i embarked on a quest to get full twitter spaces of hololive gir
 
 turns out the "we only keep spaces for 30 days" was bullshit
 
-dates back to september 2021, maybe erlier
+dates back to september 2021, maybe earlier
